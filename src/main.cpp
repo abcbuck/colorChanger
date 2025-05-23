@@ -6,15 +6,8 @@
 #include <string>
 using namespace std;
 
-int inline invert(int x){
+int invert(int x){
 	return 255-x;
-}
-int inline cutoff(int x){
-	if(x<0)
-		return 0;
-	else if(x>255)
-		return 255;
-	return x;
 }
 
 void exitIf(bool failureCondition, const char errorMessage[]) {
@@ -85,7 +78,7 @@ char* readFromFile(const char fileName[], int& bitsPerPixel, long& width, long& 
 
   file.close();
 
-	return data;
+  return data;
 }
 void createFileHeader(char fileHeader[], int bitsPerPixel, unsigned long width, unsigned long height) {
 	//Bitmap & DIB header (54 bytes)
