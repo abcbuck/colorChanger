@@ -1,4 +1,4 @@
-# What is this
+# What is this?
 
 This is a program that swaps the RGB values of an input image in every way possible. The RGB values of every pixel are changed to the six permutations RGB, RBG, BRG, BGR, GBR, GRB. For example, a pixel with the RGB value (123, 45, 67) under the permutation RGB→BGR will change to (67, 45, 123), as the values for R and B are swapped.
 
